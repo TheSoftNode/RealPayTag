@@ -280,7 +280,7 @@ const EnhancedSplitLiveDemo: FC = () => {
     ];
 
     return (
-        <section className="py-12 md:py-16 px-4 relative bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-50 dark:from-slate-900 dark:via-blue-950/10 dark:to-slate-900">
+        <section id="how-it-works" className="py-12 md:py-16 px-4 relative bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-50 dark:from-slate-900 dark:via-blue-950/10 dark:to-slate-900">
             <div className="container mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}

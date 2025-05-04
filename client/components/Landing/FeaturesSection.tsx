@@ -157,6 +157,7 @@ const EnhancedFeaturesSection: FC = () => {
         return (
             <motion.div
                 ref={cardRef}
+                id="features"
                 className="relative"
                 variants={cardVariants}
                 initial="hidden"
