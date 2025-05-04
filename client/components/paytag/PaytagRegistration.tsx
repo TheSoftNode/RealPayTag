@@ -181,7 +181,7 @@ const PayTagRegistration: FC = () => {
 
     // Handle finish - redirect to dashboard
     const handleFinish = () => {
-        router.push("/dashboard/users");
+        router.push("/dashboard/user");
     };
 
     return (
