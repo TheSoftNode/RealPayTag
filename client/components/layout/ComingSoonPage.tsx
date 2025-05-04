@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import toast from "react-hot-toast"
+import Footer from "./Footer";
+import EnhancedNavbar from "./navbar";
 
 const ComingSoonPage: FC = () => {
     const [email, setEmail] = useState("");
@@ -106,63 +108,8 @@ const ComingSoonPage: FC = () => {
     return (
         <div className="min-h-screen flex flex-col">
             {/* Sophisticated background with layers */}
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-slate-50 to-teal-50 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950" />
+            <EnhancedNavbar />
 
-                {/* Animated gradient overlays */}
-                <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-blue-100/50 to-transparent dark:from-blue-500/10 dark:to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-teal-100/30 to-transparent dark:from-teal-500/10 dark:to-transparent" />
-
-                {/* Grid pattern overlay */}
-                <div
-                    className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]"
-                    style={{
-                        backgroundImage: `linear-gradient(to right, #94a3b8 1px, transparent 1px), linear-gradient(to bottom, #94a3b8 1px, transparent 1px)`,
-                        backgroundSize: '4rem 4rem',
-                    }}
-                />
-
-                {/* Subtle floating elements */}
-                {[...Array(5)].map((_, i) => (
-                    <motion.div
-                        key={i}
-                        className="absolute rounded-full blur-3xl opacity-10 dark:opacity-5"
-                        initial={{
-                            x: Math.random() * 100 - 50 + "%",
-                            y: Math.random() * 100 - 50 + "%",
-                            scale: Math.random() * 0.5 + 0.5,
-                        }}
-                        animate={{
-                            x: Math.random() * 100 - 50 + "%",
-                            y: Math.random() * 100 - 50 + "%",
-                            scale: Math.random() * 0.5 + 0.5,
-                        }}
-                        transition={{
-                            duration: Math.random() * 20 + 10,
-                            repeat: Infinity,
-                            repeatType: "reverse",
-                        }}
-                        style={{
-                            width: Math.random() * 400 + 200,
-                            height: Math.random() * 400 + 200,
-                            background: i % 2 === 0
-                                ? `linear-gradient(120deg, rgba(56, 189, 248, 0.4), rgba(20, 184, 166, 0.4))`
-                                : `linear-gradient(120deg, rgba(16, 185, 129, 0.4), rgba(59, 130, 246, 0.4))`,
-                        }}
-                    />
-                ))}
-            </div>
-
-            <header className="w-full py-6 px-4 sm:px-6 flex justify-between items-center relative z-10">
-                <div className="text-xl font-bold bg-gradient-to-r from-blue-600 via-teal-500 to-green-500 bg-clip-text text-transparent">
-                    PayTag
-                </div>
-                <Link href="/">
-                    <Button variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-slate-800 text-sm">
-                        Back to Home
-                    </Button>
-                </Link>
-            </header>
 
             <main className="flex-1 flex items-center justify-center px-4 sm:px-6 py-10">
                 <motion.div
@@ -266,9 +213,7 @@ const ComingSoonPage: FC = () => {
                 </motion.div>
             </main>
 
-            <footer className="w-full py-6 text-center text-xs text-slate-500 dark:text-slate-400 relative z-10">
-                <p>© {new Date().getFullYear()} PayTag. All rights reserved.</p>
-            </footer>
+            <Footer />
         </div>
     );
 };
