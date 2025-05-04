@@ -72,8 +72,8 @@ const EnhancedNavbar: FC = () => {
 
     // Navbar links
     const navLinks = [
-        { title: "Features", href: "#features" },
-        { title: "How It Works", href: "#how-it-works" },
+        { title: "Features", href: "/#features" },
+        { title: "How It Works", href: "/#how-it-works" },
         {
             title: "Solutions",
             href: "#solutions",
