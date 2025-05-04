@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 import { useWallet } from "@/hooks/use-web3";
 import { Dialog, DialogContent, } from "@/components/ui/dialog";
 import { Tag } from "lucide-react";
+import Footer from "@/components/layout/Footer";
 
 
 export default function LandingPage() {
@@ -72,6 +73,7 @@ export default function LandingPage() {
 
       </main>
       <NewsletterSubscription />
+      <Footer />
 
       {/* PayTag Setup Modal */}
       {isRedirecting && (
