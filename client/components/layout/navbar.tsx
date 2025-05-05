@@ -78,9 +78,9 @@ const EnhancedNavbar: FC = () => {
             title: "Solutions",
             href: "#solutions",
             subItems: [
-                { title: "For Freelancers", href: "/dashboard/users" },
-                { title: "For Businesses", href: "/dashboard/employers" },
-                { title: "For Remote Teams", href: "/dashboard/users" },
+                { title: "For Freelancers", href: "/dashboard/user" },
+                { title: "For Businesses", href: "/dashboard/employer" },
+                { title: "For Remote Teams", href: "/dashboard/user" },
             ]
         },
         { title: "Developers", href: "/developers" },
